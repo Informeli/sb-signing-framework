@@ -18,10 +18,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+#ifdef AIX
 /* AIX specific */
 #include <sys/types.h>
 #include <netinet/in.h>
-
+#endif
 /* local */
 #include "cca_structures.h"
 #include "utils.h"

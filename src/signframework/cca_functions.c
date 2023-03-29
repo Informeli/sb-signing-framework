@@ -20,13 +20,12 @@
 #include <time.h>
 
 /* CCA library */
-#if defined AIX
-#include <csufincl.h>
-#elif defined Linux
+/*removed useless kernel check*/
+/*compiler will issue own warning when library doesn't work or exit and now someone using any compatible os can distribution*/
 #include <csulincl.h>
-#else
-#error "Must define either AIX or Linux"
-#endif
+
+
+
 
 /* local */
 #include "cca_functions.h"
